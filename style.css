@@ -1,0 +1,269 @@
+body {
+    display: grid;
+    grid-template-columns: 15.15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 45px 13.23% 26.68% 20.18% 38.59% 45px;
+    font-family: Montserrat;
+    color: #78829d;
+    font-size: 12px;
+
+}
+
+#header {
+    background-color: #2f364a;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    display: grid;
+    grid-template-columns: 16px 10px 10px 10px 68% 7.08% 7.08% 13.1%;
+    grid-template-rows: 45px;
+    grid-column-gap: 4px;
+}
+
+.btn {
+    width: 10px;
+    height: 10px;
+    grid-row: 1;
+    grid-column: 1;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+#red-btn {
+    background-color: #e76847;
+    grid-column: 2;
+}
+
+#yellow-btn {
+    background-color: #fabf00;
+    grid-column: 3;
+}
+
+#green-btn {
+    background-color: #52bea6;
+    grid-column: 4;
+}
+
+#my-book-app{
+    grid-row: 1;
+    grid-column: 5;
+    align-self: center; 
+    justify-self: center;
+}
+
+#help-center {
+    grid-row: 1;
+    grid-column: 6;  
+    justify-self: center; 
+    align-self: center;
+}
+
+#our-support {
+    grid-row: 1;
+    grid-column: 7;
+    justify-self: center;
+    align-self: center;
+}
+
+#profile {
+    grid-row: 1;
+    grid-column-start: 8;
+    grid-column-end: 8;
+    color: white;
+    background-color: #15a4fa;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 45px;
+}
+ #avatar-img {
+     border-radius: 17px;
+     border-color: white;
+     border: 2px solid;
+     grid-column: 1;
+     align-self: center;
+     justify-self: center;
+ } 
+
+ #profile p {
+    grid-column: 2;
+    align-self: center;
+    justify-content: center;
+    white-space: nowrap;
+ }
+
+ #header-menu-open {
+    grid-column: 3;
+    align-self: center;
+    justify-self: center;
+ }
+ 
+
+#sidebar {
+    background-color: #141824;
+    grid-column: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 120px 26.68% 20.18% 38.59%;
+    grid-template-columns: 100%;
+    grid-row-gap: 4px;
+}
+
+#add-book-btn {
+    grid-row: 1;
+    background-color: #1f2637;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-book-btn > input {
+    height: 44px;
+    border-radius: 4px;
+    background-color: #f2795a;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#sections {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: #1f2637;
+    padding-left: 20px;
+    padding-top: 15 px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-row-gap: 6px;
+    font-size: 13px;
+    line-height: 2;
+}
+
+#browse {
+    color: white;
+    background-color: #15a4fa;
+}
+
+#user-lists {
+    grid-row: 3;
+    grid-column: 1;
+    background-color: #1f2637;
+    display: grid;
+    grid-template-rows: 45px 45px 45px 45px;
+    grid-template-columns: 24px 80%;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.list-dots {
+    width: 6px;
+    height: 6px;
+    grid-row: 1;
+    grid-column: 1;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+#list-dot-red {
+    background-color: #e64c66;
+    grid-row: 1;
+}
+
+#list-dot-yellow {
+    background-color: #ffab00;
+    grid-row: 2;
+}
+
+#list-dot-green {
+    background-color: #00bfdd;
+    grid-row: 3;
+}
+
+#list-dot-violet {
+    background-color: #7874cf;
+    grid-row: 4;
+}
+
+.list-name {
+    grid-column: 2;
+}
+
+#added-books {
+    grid-row: 4;
+    grid-column: 1;
+    background-color: #1f2637;
+    display: grid;
+    grid-template-columns: 24px 80%;
+    grid-template-rows: auto(4);
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+#history-icon-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#history-icon-2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.smaller-text {
+    font-size: 12px;
+    color: #78829d;
+    font-weight: 300;
+}
+
+.added-book-info {
+    padding-top: 38px;
+}
+
+.minutes-ago {
+    padding-top: 16px;
+}
+
+#all-books {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6; 
+}
+
+#footer {
+    background-color: #181e2c;
+    grid-row: 6;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    display: grid;
+    grid-template-columns: 91.66% 4.17% 4.17%;
+    grid-template-rows: 45px;
+    align-items: stretch;
+}
+
+#question-mark { 
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    background-color: #1f2637;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gear {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    background-color: #15a4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
