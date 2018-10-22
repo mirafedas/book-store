@@ -9,135 +9,161 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>Book Store</title>
 </head>
-<body>
-    <div id='header'>
-        <div id='btn-wrapper'>
-            <div class='btn' id='red-btn'></div>
-            <div class='btn' id='yellow-btn'></div>
-            <div class='btn' id='green-btn'></div>
+<body class='app-wrapper'>
+    <div class='header'>
+        <div class='btn-wrapper'>
+            <div class='btn red-btn'></div>
+            <div class='btn yellow-btn'></div>
+            <div class='btn green-btn'></div>
         </div>
-            <div id='my-book-app'> <img src='img/my-book-app.png' /> MyBookApp</div>
-            <div id='help-center'>Help Center</div>
-            <div id='our-support'>Our Support</div>
-            <div id='profile'><img id='avatar-img' src='img/avatar-01.png' /> <div id='username'>John Doe</div> <img id='header-menu-open' src='img/icon-profile.png' /></div>
-    </div>
-
-    <div id='sidebar'> 
-
-        <div id='add-book-btn'><input type='button' value=' + ADD A BOOK'/></div>
-
-        <div id='sections'>
-                <div class='section-btn' id='now-reading'><img src='img/now-reading.png' /> Now Reading<br></div>
-                <div class='section-btn active' id='browse'><img src='img/browse.png' /> Browse<br></div>
-                <div class='section-btn' id='buy-books'><img src='img/buy-books.png' /> Buy Books<br></div>
-                <div class='section-btn' id='favourite-books'><img src='img/favourite-books.png' /> Favourite Books<br></div>
-                <div class='section-btn' id='wishlist'><img src='img/wishlist.png' /> Wishlist<br></div>
-                <div class='section-btn' id='history'><img src='img/history.png' /> History<br></div>
+        <div class='my-book-app'> <img src='img/my-book-app.png' /> MyBookApp</div>
+        <div class='help-center'>
+          <div>Help Center</div>
+          <div class="small-circle"></div>
+          <div>Our Support</div>
         </div>
-
-        <div id ='user-lists'>
-            <div class='list-dots' id='list-dot-red'></div><div class='list-name' id='list-name-1'>Must Read Titles</div>
-            <div class='list-dots' id='list-dot-yellow'></div><div class='list-name' id='list-name-2'>Best of List</div>
-            <div class='list-dots' id='list-dot-green'></div><div class='list-name' id='list-name-3'>Classic Novels</div>
-            <div class='list-dots' id='list-dot-violet'></div><div class='list-name' id='list-name-4'>Non Fiction</div>
-        </div>
-
-        <div id='added-books'>
-            <img id='history-icon-1' src='img/history.png' /> <div><span class='smaller-text'>You added</span> Fight Club <span class='smaller-text'>by</span> Chuck Palahniuk <span class='smaller-text'>to your</span> Must Read Titles.<br> <div class='smaller-text minutes-ago'>24 minutes ago</div></div>
-            <img id='history-icon-2' src='img/history.png' /> <div><span class='smaller-text'>You added</span> The Trial <span class='smaller-text'>by</span> Franz Kafka <span class='smaller-text'>to your</span> Must Read Titles.<br> <div class='smaller-text minutes-ago'>48 minutes ago</div></div>
+        <div class='profile'>
+            <img class='avatar-img' src='img/avatar-01.png' />
+            <div class='username'>John Doe</div>
+            <img class='header-menu-open' src='img/icon-profile.png' />
         </div>
     </div>
 
-    <div id='heading'>Browse available books</div>
-    <div id='top-menu'>
-        <div class='top-menu-btn'>
-            <div class='top-menu active-menu'>All books</div>
-            <div class='top-menu'>Most recent</div>
-            <div class='top-menu'>Most Popular</div>
-            <div class='top-menu'>Free books</div>
+    <div class="content">
+    <div class='sidebar'>
+
+        <div class='add-book-btn-wrapper'><input class='add-book-btn' type='button' value=' + ADD A BOOK'/></div>
+
+        <div class='sections'>
+                <div class='section-btn' class='now-reading'><img src='img/now-reading.png' /> Now Reading<br></div>
+                <div class='section-btn active' class='browse'><img src='img/browse.png' /> Browse<br></div>
+                <div class='section-btn' class='buy-books'><img src='img/buy-books.png' /> Buy Books<br></div>
+                <div class='section-btn' class='favourite-books'><img src='img/favourite-books.png' /> Favourite Books<br></div>
+                <div class='section-btn' class='wishlist'><img src='img/wishlist.png' /> Wishlist<br></div>
+                <div class='section-btn' class='history'><img src='img/history.png' /> History<br></div>
         </div>
-        <div id='search'>
-            <input class='top-menu' type='text' placeholder='Enter Keywords'/>
+
+        <div class ='user-lists'>
+            <div class='list-dots list-dot-red'></div>
+            <div class='list-name list-name-1'>Must Read Titles</div>
+            <div class='list-dots list-dot-yellow'></div>
+            <div class='list-name list-name-2'>Best of List</div>
+            <div class='list-dots list-dot-green'></div>
+            <div class='list-name list-name-3'>Classic Novels</div>
+            <div class='list-dots list-dot-violet'></div>
+            <div class='list-name list-name-4'>Non Fiction</div>
+        </div>
+
+        <div class='added-books'>
+            <img class='history-icon-1' src='img/history.png' /> <div><span class='smaller-text'>You added</span> Fight Club <span class='smaller-text'>by</span> Chuck Palahniuk <span class='smaller-text'>to your</span> Must Read Titles.<br> <div class='smaller-text minutes-ago'>24 minutes ago</div></div>
+            <img class='history-icon-2' src='img/history.png' /> <div><span class='smaller-text'>You added</span> The Trial <span class='smaller-text'>by</span> Franz Kafka <span class='smaller-text'>to your</span> Must Read Titles.<br> <div class='smaller-text minutes-ago'>48 minutes ago</div></div>
         </div>
     </div>
 
-    <div id='books'>
-        <div id='book-1'>
-            <img src='img/1.png' />
-            <p class='book-title'>Jewels of Nizam</p>
-            <p class='author'>by Geeta Devi</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+    <div class="book-content">
+      <div class='heading'>Browse available books</div>
+      <div class='top-menu'>
+        <div class='top-menu-wrapper'>
+            <div class='top-menu-btn active-menu'>All books</div>
+            <div class='top-menu-btn'>Most recent</div>
+            <div class='top-menu-btn'>Most Popular</div>
+            <div class='top-menu-btn'>Free books</div>
+          </div>
+          <div class='search'>
+            <input class='search-input' type='text' placeholder='Enter Keywords'/>
+          </div>
+      </div>
+
+          <div class='books'>
+            <div class='book-1'>
+              <img src='img/1.png' />
+              <p class='book-title'>Jewels of Nizam</p>
+              <p class='author'>by Geeta Devi</p>
+              <div class='stars'>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class='book-2'>
+              <img src='img/2.png' />
+              <p class='book-title'>Cakes & Bakes</p>
+              <p class='author'>by Sanjeev Kapoor</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+            </div>
+
+            <div class='book-3'>
+              <img src='img/3.png' />
+              <p class='book-title'>Jamie's Kitchen</p>
+              <p class='author'>by Jamie Oliver</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt"></i></div>
+            </div>
+
+            <div class='book-4'>
+              <img src='img/4.png' />
+              <p class='book-title'>Inexpensive Family Meals</p>
+              <p class='author'>by Simon Holst</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="far fa-star"></i></div>
+            </div>
+
+            <div class='book-5'>
+              <img src='img/5.png' />
+              <p class='book-title'>Paleo Slow Cooking</p>
+              <p class='author'>by Chrissy Gower</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt"></i></div>
+            </div>
+
+            <div class='book-6'>
+              <img src='img/6.png' />
+              <p class='book-title'>Cook Like an Italian</p>
+              <p class='author'>by Tobie Puttock</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="far fa-star"></i></div>
+            </div>
+
+            <div class='book-7'>
+              <img src='img/7.png' />
+              <p class='book-title'>Suneeta Vaswani</p>
+              <p class='author'>by Geeta Devi</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+            </div>
+
+            <div class='book-8'>
+              <img src='img/8.png' />
+              <p class='book-title'>Jamie Does</p>
+              <p class='author'>by Jamie Oliver</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="far fa-star"></i></div>
+            </div>
+
+            <div class='book-9'>
+              <img src='img/9.png' />
+              <p class='book-title'>Jamie's Italy</p>
+              <p class='author'>by Jamie Oliver</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+            </div>
+
+            <div class='book-10'>
+              <img src='img/10.png' />
+              <p class='book-title'>Vegetable Cookbook</p>
+              <p class='author'>by Matthew Biggs</p>
+              <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
+            </div>
+
+          </div>
         </div>
 
-        <div id='book-2'>
-            <img src='img/2.png' />
-            <p class='book-title'>Cakes & Bakes</p>
-            <p class='author'>by Sanjeev Kapoor</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-
-        <div id='book-3'>
-            <img src='img/3.png' />
-            <p class='book-title'>Jamie's Kitchen</p>
-            <p class='author'>by Jamie Oliver</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-
-        <div id='book-4'>
-            <img src='img/4.png' />
-            <p class='book-title'>Inexpensive Family Meals</p>
-            <p class='author'>by Simon Holst</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-
-        <div id='book-5'>
-            <img src='img/5.png' />
-            <p class='book-title'>Paleo Slow Cooking</p>
-            <p class='author'>by Chrissy Gower</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-
-        <div id='book-6'>
-            <img src='img/6.png' />
-            <p class='book-title'>Cook Like an Italian</p>
-            <p class='author'>by Tobie Puttock</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-
-        <div id='book-7'>
-            <img src='img/7.png' />
-            <p class='book-title'>Suneeta Vaswani</p>
-            <p class='author'>by Geeta Devi</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-
-        <div id='book-8'>
-            <img src='img/8.png' />
-            <p class='book-title'>Jamie Does</p>
-            <p class='author'>by Jamie Oliver</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-
-        <div id='book-9'>
-            <img src='img/9.png' />
-            <p class='book-title'>Jamie's Italy</p>
-            <p class='author'>by Jamie Oliver</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-
-        <div id='book-10'>
-            <img src='img/10.png' />
-            <p class='book-title'>Vegetable Cookbook</p>
-            <p class='author'>by Matthew Biggs</p>
-            <div class='stars'><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        </div>
-        
     </div>
 
-    <div id='footer'>
-        <div id='question-mark'><img src='img/question-mark.png' /></div>
-        <div id='gear'><img src='img/gear.png' /></div>
+    <div class='footer'>
+        <div class='question-mark'>
+          <img class='question-mark-img' src='img/question-mark.png' />
+        </div>
+        <div class='gear'>
+          <img class='gear-img' src='img/gear.png' />
+        </div>
     </div>
-      
+
 </body>
 </html>
