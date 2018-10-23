@@ -337,7 +337,7 @@ $default-font-size: 12px;
     grid-row: 3;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 50% 50%;
+    grid-template-rows: repeat(auto-fill, minmax(0%, 50%));
     margin-top: 30px;
     margin-left: 20px; 
 }
