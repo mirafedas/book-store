@@ -41,17 +41,21 @@ $default-font-size: 12px;
 
 .header__btn:hover { transform: scale(1.1); }
 
+@mixin header__btn ($background-color) {
+  background-color: $background-color;
+}
+
 .header__red-btn {
-    background-color: #e76847;
+  @include header__btn(#e76847);
 }
 
 .header__yellow-btn {
-    background-color: #fabf00;
+  @include header__btn(#fabf00);
     margin: 0 4px;
 }
 
 .header__green-btn {
-    background-color: #52bea6;
+  @include header__btn(#52bea6);
 }
 
 .header__my-book-app {
@@ -210,24 +214,25 @@ $default-font-size: 12px;
     justify-self: center;
 }
 
+@mixin sidebar__list-dot ($background-color, $grid-row) {
+    background-color: $background-color;
+    grid-row: $grid-row;
+}
+
 .sidebar__list-dot-red {
-    background-color: #e64c66;
-    grid-row: 1;
+    @include sidebar__list-dot(#e64c66, 1);
 }
 
 .sidebar__list-dot-yellow {
-    background-color: #ffab00;
-    grid-row: 2;
+  @include sidebar__list-dot(#ffab00, 2);
 }
 
 .sidebar__list-dot-green {
-    background-color: #00bfdd;
-    grid-row: 3;
+  @include sidebar__list-dot(#00bfdd, 3);
 }
 
 .sidebar__list-dot-violet {
-    background-color: #7874cf;
-    grid-row: 4;
+  @include sidebar__list-dot(#7874cf, 4);
 }
 
 .sidebar__list-name {
@@ -246,16 +251,17 @@ $default-font-size: 12px;
     padding-top: 30px;
 }
 
+@mixin sidebar__history-icon($grid-column, $grid-row, $justify-self) {
+    grid-column: $grid-column;
+    grid-row: $grid-row;
+    justify-self: $justify-self;
+}
 .sidebar__history-icon-1 {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
+    @include sidebar__history-icon(1, 1, center);
 }
 
 .sidebar__history-icon-2 {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: center;
+  @include sidebar__history-icon(1, 2, center);
 }
 
 .sidebar__smaller-text {
